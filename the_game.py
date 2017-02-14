@@ -16,7 +16,7 @@ t0=time.clock()
 
 list_of_arrays=[]
 for i in range(256):
-	list_of_arrays.append(space.plane)
+	list_of_arrays.append(space.plane.copy())
 	space.MakeStep()
 
 t1=time.clock()
